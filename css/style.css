@@ -1,0 +1,30 @@
+.flex-container {
+padding: 0;
+margin: 0;
+list-style: none;
+display: flex;
+flex-flow: row;
+justify-content: space-around;
+line-height: 30px;
+margin: auto;
+}
+
+.flex-container > div {
+flex: 1;
+height: auto;
+margin: 5px;
+}
+
+.flex-container > div:before {
+content:'';
+display: block;
+padding-top:100%;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}
