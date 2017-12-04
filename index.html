@@ -11,21 +11,42 @@
 
 <body>
   <header>
-
   </header>
+    <!--Game Settings -->
+    <h3 class="ml-5 mt-5">Paramètres</h3>
     <form method="get" onSubmit="return false;">
-      <div class="container-fluid d-flex mt-3 ml-3">
-        <label for="squareNbr">Combien de carrés souhaitez vous générer ?</label>
-        <input id="nbSquare" class="ml-1" type="number" min="3" max="9">
+
+      <div class="container-fluid mt-3 ml-0">
+
+        <div class="container-fluid d-flex mt-1">
+          <label for="squareNbr">Combien de carrés souhaitez vous générer ?</label>
+          <input id="nbSquare" class="ml-2" type="number" min="3" max="9">
+        </div>
+
+        <div class="container-fluid d-flex mt-1">
+          <label for="squareNbr">Combien de secondes par manche ?</label>
+          <input id="nbSec" class="ml-2" type="number" min="3" max="30">
+        </div>
+
+        <div class="container-fluid d-flex mt-1">
+          <label for="squareNbr" class="">Combien de round voulez vous jouer ?</label>
+          <input id="nbTurn" class="ml-2" type="number" min="1" max="10">
+        </div>
       </div>
-      <div class="container-fluid d-flex mt-2">
-        <input id="startBtn" class="btn bg-primary mx-auto" type="button" value="Start" onClick="setSquareNbr();">
-      </div>
-      <div class="container-fluid d-flex mt-2">
-        <input id="stopBtn" class="btn bg-danger mx-auto" type="button" value="Stop">
+
+      <div class="container-fluid d-flex">
+        <input id="startBtn" class="btn bg-primary" type="button" value="Start" onClick="setSquareNbr();">
+
+        <input id="stopBtn" class="btn bg-danger ml-1" type="button" value="Stop">
+
+        <input id="colorBtn" class="btn bg-secondary ml-1" type="button" value="Color" onClick="getRandomColor();">
       </div>
     </form>
 
+    <!--Squares-->
+    <div id="squareArea" class="flex-container">
+
+    </div>
 
 
 
