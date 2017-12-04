@@ -13,9 +13,18 @@
   <header>
 
   </header>
-
-
-
+    <form method="get" onSubmit="return false;">
+      <div class="container-fluid d-flex mt-3 ml-3">
+        <label for="squareNbr">Combien de carrés souhaitez vous générer ?</label>
+        <input id="nbSquare" class="ml-1" type="number" min="3" max="9">
+      </div>
+      <div class="container-fluid d-flex mt-2">
+        <input id="startBtn" class="btn bg-primary mx-auto" type="button" value="Start" onClick="setSquareNbr();">
+      </div>
+      <div class="container-fluid d-flex mt-2">
+        <input id="stopBtn" class="btn bg-danger mx-auto" type="button" value="Stop">
+      </div>
+    </form>
 
 
 
